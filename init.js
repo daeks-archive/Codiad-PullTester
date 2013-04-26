@@ -6,7 +6,10 @@
 
 (function(global, $){
 
-    var codiad = global.codiad;
+    var codiad = global.codiad,
+        scripts = document.getElementsByTagName('script'),
+        path = scripts[scripts.length-1].src.split('?')[0],
+        curpath = path.split('/').slice(0, -1).join('/')+'/';
 
     $(function() {
         codiad.tester.init();
@@ -14,8 +17,8 @@
 
     codiad.tester = {
         
-        controller: 'plugins/tester/controller.php',
-        dialog: 'plugins/tester/dialog.php',
+        controller: curpath + 'controller.php',
+        dialog: curpath + 'dialog.php',
 
         init: function() {
         },
