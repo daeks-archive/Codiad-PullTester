@@ -1,6 +1,6 @@
 [ { "author" : "daeks",
     "version": "0.1",
-    "name" : "Codiad Tester",
+    "name" : "Codiad PullTester",
     "rightbar" : [{
         "action" : "codiad.tester.open();",
         "icon" : "icon-network",
