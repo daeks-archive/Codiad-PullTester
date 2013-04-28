@@ -37,7 +37,7 @@
                     echo '<tr>';
                     echo '<td>'.$request['number'].'</td>';
                     echo '<td>'.$request['title'].'</td>';
-                    echo '<td><pre>'.htmlspecialchars($request['body']).'</pre></td>';
+                    echo '<td><pre style="width: 500px;">'.htmlspecialchars($request['body']).'</pre></td>';
                     if(file_exists($_GET['root'].'/'.$request['number']) && is_dir($_GET['root'].'/'.$request['number'])) {
                         echo '<td></td>';
                     } else {
