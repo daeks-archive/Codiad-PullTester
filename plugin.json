@@ -1,6 +1,7 @@
 [ { "author" : "daeks",
-    "version": "0.1",
+    "version": "0.2",
     "name" : "Codiad PullTester",
+    "url" : "https://github.com/daeks/Codiad-PullTester.git",
     "rightbar" : [{
         "action" : "codiad.tester.open();",
         "icon" : "icon-network",
