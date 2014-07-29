@@ -32,6 +32,7 @@
                 if (createResponse != 'error') {
                     codiad.message.success(createResponse.message);
                     codiad.filemanager.rescan(root);
+                    codiad.filemanager.openInBrowser(root+'/'+id);
                 } else {
                     codiad.message.error(createResponse.message);
                 }
